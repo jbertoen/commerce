@@ -82,8 +82,6 @@ class LineItemTypeForm extends EntityForm {
       '#default_value' => $lineItemType->getPurchasableEntityType(),
       '#options' => $purchasableEntityTypes,
       '#empty_value' => '',
-      '#disabled' => !$lineItemType->isNew(),
-      '#required' => TRUE,
     ];
     $form['orderType'] = [
       '#type' => 'select',
